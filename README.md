@@ -78,6 +78,8 @@ git clone --single-branch --branch version_1 https://github.com/gillesretiere/st
 ## Installation
 
 ```bash
+sudo npm install --global yarn
+yarn --version
 yarn
 ```
 
