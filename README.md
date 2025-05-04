@@ -59,10 +59,11 @@ I wanted it to be nearly as feature-rich as popular blogging templates like [bea
 
 ## Quick Start Guide
 
-1. Clone the repo
+1. Clone the repo on a specific branch
 
 ```bash
-npx degit 'gillesretiere/starter-blog'
+cd ~/projects/langdeck/venv/src/hmrt
+git clone --single-branch --branch version_1 https://github.com/gillesretiere/starter-blog
 ```
 
 2. Personalize `siteMetadata.js` (site related information)
