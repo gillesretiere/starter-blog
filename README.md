@@ -62,7 +62,7 @@ I wanted it to be nearly as feature-rich as popular blogging templates like [bea
 1. Clone the repo
 
 ```bash
-npx degit 'timlrx/tailwind-nextjs-starter-blog'
+npx degit 'gillesretiere/starter-blog'
 ```
 
 2. Personalize `siteMetadata.js` (site related information)
