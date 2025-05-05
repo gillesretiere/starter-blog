@@ -1,6 +1,6 @@
 ![tailwind-nextjs-banner](/public/static/images/hmrt_logo_text_red_round.png)
 
-# Tailwind Nextjs Starter Blog
+# Tailwind Nextjs Starter Blog for Hammer & Marteau
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/timlrx/tailwind-nextjs-starter-blog?style=social)](https://GitHub.com/timlrx/tailwind-nextjs-starter-blog/stargazers/)
 [![GitHub forks](https://img.shields.io/github/forks/timlrx/tailwind-nextjs-starter-blog?style=social)](https://github.com/timlrx/tailwind-nextjs-starter-blog/forks)
