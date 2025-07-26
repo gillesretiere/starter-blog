@@ -1,6 +1,6 @@
 ![tailwind-nextjs-banner](/public/static/images/hmrt_logo_text_red_round.png)
 
-# Tailwind Nextjs Starter Blog
+# Tailwind Nextjs Starter Blog for Hammer & Marteau
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/timlrx/tailwind-nextjs-starter-blog?style=social)](https://GitHub.com/timlrx/tailwind-nextjs-starter-blog/stargazers/)
 [![GitHub forks](https://img.shields.io/github/forks/timlrx/tailwind-nextjs-starter-blog?style=social)](https://github.com/timlrx/tailwind-nextjs-starter-blog/forks)
@@ -59,10 +59,11 @@ I wanted it to be nearly as feature-rich as popular blogging templates like [bea
 
 ## Quick Start Guide
 
-1. Clone the repo
+1. Clone the repo on a specific branch
 
 ```bash
-npx degit 'timlrx/tailwind-nextjs-starter-blog'
+cd ~/projects/langdeck/venv/src/hmrt
+git clone --single-branch --branch version_1 https://github.com/gillesretiere/starter-blog
 ```
 
 2. Personalize `siteMetadata.js` (site related information)
@@ -77,6 +78,8 @@ npx degit 'timlrx/tailwind-nextjs-starter-blog'
 ## Installation
 
 ```bash
+sudo npm install --global yarn
+yarn --version
 yarn
 ```
 
