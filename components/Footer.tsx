@@ -27,9 +27,7 @@ export default function Footer() {
           <Link href="/">{siteMetadata.title}</Link>
         </div>
         <div className="mb-8 text-sm text-gray-500 dark:text-gray-400">
-          <Link href="https://hammer-marteau.com">
-            2025, Hammer &amp; Marteau
-          </Link>
+          <Link href="https://hammer-marteau.com">2025, Hammer &amp; Marteau</Link>
         </div>
       </div>
     </footer>
