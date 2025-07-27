@@ -1,17 +1,17 @@
 /** @type {import("pliny/config").PlinyConfig } */
 const siteMetadata = {
-  title: 'Blog Hammer & Marteau',
+  title: 'Le blog-note de Hammer & Marteau',
   author: 'Gilles Retière',
   headerTitle: 'Hammer & Marteau',
-  description: 'A blog created with Next.js and Tailwind.css',
-  language: 'en-us',
+  description: 'Le blog-note de Hammer & Marteau',
+  language: 'fr',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteUrl: 'https://hammer-marteau.com',
+  siteRepo: 'https://hammer-marteau.fr',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.svg`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/hmrt_logo_full.png`,
   mastodon: 'https://mastodon.social/@mastodonuser',
-  email: 'address@yoursite.com',
+  email: 'contact@hammer-marteau.com',
   github: 'https://github.com',
   x: 'https://twitter.com/x',
   // twitter: 'https://twitter.com/Twitter',
