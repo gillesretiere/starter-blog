@@ -1,33 +1,64 @@
 ---
-title: Bili, Bilingual Reader
+title: Bili, un lecteur parallèle bilingue
 date: '2025-08-16'
 tags: [ 'epub', 'ebook']
 draft: false
 summary: Bili est un lecteur de texte bilingue, avec affichage segmenté par paragraphes
 ---
 
-# Bili : un lecteur de texte bilingue, avec affichage segmenté par paragraphes
-
+## Résumé (abstract)
+Récémment, j'ai été confronté à un problème alors que j'essayais de lire un même livre parallèlement en deux langues : *Oblomov d'Ivan Gontcharov*. Possédant les versions papier et numérique, j'ai pu essayer de ces deux manières et suis arrivé au même constat : il est peu pratique de lire deux livres en parallèle ! Il existe bien des livres bilingues en format papier, qui proposent une page (verso) en langue native, et une page (recto) en langue traduite. C'est pas mal car il n'y a qu'un livre à manipuler, mais les textes en parallèles sont de la longueur d'une page et c'est parfois un peu compliqué de s'y retrouver. 
+J'ai eu l'idée de proposer un version numérique qui partirait du même principe (recto/verso devient colonneA/colonneB), mais en sectionnant les textes non pas par pages, mais par paragraphes. 
+Je me suis lancé dans ce projet très personnel, avec une stack très simple (React) et, étant  assez satisfait des premiers résultats, je me suis mis à la manoeuvre pour développer cet outil pour en faire une application complète et pleinement utilisable.
+Je tiens à préciser qu'il ne s'agit pas d'un logiciel type liseuse qui lirait tous types de livres numériques, mais d'une application qui permet de lire en parallèles deux textes en deux langues, ayant été préparés pour cela.
+![Oblomov](/static/images/bili/Oblomov-cover-600x380.jpg)
+## Mots-clés
+ebook, epub
+## Introduction
+### Contexte
+### Problématisation
 Les Corpus bilingues sont constitués d'un contenu principal qui est le texte même de l'ouvrage, mais aussi de méta-données appelées *sections préliminaires* (en anglais *front matters*) telles que *préface*, *tables des matières*, etc. 
 Ces sections préliminaires sont évidemment non parallèles (éditeurs différents, formats spécifiques d'une langue ou d'un pays à l'autre...) et donc ne peuvent être alignées. L'objectif est de les supprimer afin de ne garder qu'un corpus pouvant être mis en parallèle en le soumettant à un alignement basé sur les longueurs de mots, de phrases. Cet alignement est possible avec l'algorithme de Gale-Church.
-
-## Solution
+### Hypothèses
 Dans un premier temps, générer des fichiers JSON statiques en mode offline, manuel ou semi-automatique. Cette approche est plus efficace qu'une approche dynamique (avec Flask par exemple).
-### Avantages de la solution
+#### Avantages de la solution
 L'alignement des paragraphes (via *extract_paragraphs_from_epub* et *align_paragraphs*) est une opération coûteuse en CPU/temps (parsing XML, programmation dynamique). En la faisant une fois offline, nous évitons de la répéter à chaque chargement de l'app. Les JSON statiques sont légers, rapides à charger dans React, et scalables pour une app statique (pas besoin de backend live). 
-### Désavantages
+#### Désavantages
 Elle ne permet pas à des utilisateurs de charger leurs propres ePub (ex. app multi-livres dynamique). De toute manière, ce n'est pas un cas d'usage et ici, pour des livres fixes, le mode statique est parfait.
-### Inconvénients mineurs
+#### Inconvénients mineurs
 Si on souhaite ajouter de nouveaux livres, il est nécessaire de regénérer les JSON manuellement. Mais c'est simple.
-## Méthode
-Il est impératif d'avoir une approche structurée !
 
-Les différentes phases ou étapes :
+## Méthodologie
+Il est impératif d'avoir une approche structurée !
+Passons en revue les différentes étapes pour mener à bien notre projet.
+
+### Etapes sucessives
 ### Nettoyage (Data Wrangling) et pré-alignement
 Cette étape consiste à détecter et supprimer les *sections préliminaires* (front matters). Avec un outil comme **Calibre** (gratuit), il est aisé d'éditer un fichier EPUB et de filtrer les paragraphes courts.
 
 Nous assumerons que nous disposons de deux fichiers distincts (A et B) correspondant au même ouvrage en deux langues différentes.
+Le but est de produire deux fichiers distincts (A' et B') correspondant au même ouvrage en deux langues différentes, ***sans sections préliminaires***.
 
 L'objectif est ici de repérer le point de départ du *contenu principal* en identifiant le *premier paragraphe* **parallèle** pour A et B. Il est possible de répérer des *cognates* ou mots communs pour d'aider dans cette tâche.
+## Backend (Python)
+
+```python
+# Exemple d'utilisation (exécutez offline)
+if __name__ == "__main__":
+    # Remplacez par vos chemins ePub
+    bookA = 'Blaue Nacht-CH-01-06 - Buchholz, Simone.epub'  # Ex. anglais
+    bookB = 'Nuit bleue-CH-01-06 - Simone Buchholz.epub'  # Ex. français
+    output = 'Blaue Nacht-Nuit bleue - Simone Buchholz_DE_FR.json'
+    
+    generate_static_json(bookA, bookB, output)
+```
+## Conclusion
+
+
+
+
+
+
+
 
 

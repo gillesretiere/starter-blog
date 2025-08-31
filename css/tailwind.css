@@ -13,6 +13,8 @@
   --font-sans: var(--font-articulat-cf), articulat-cf, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 
+  --font-serif: var(--font-artifex-cf) , artifex-cf, serif;
+
   /* Colors */
   /* Copied from https://tailwindcss.com/docs/theme#default-theme-variable-reference */
   --color-primary-50: oklch(97.1% 0.013 17.38);
@@ -98,6 +100,9 @@
     }
     & h3 {
       font-weight: 600;
+    }
+    & p {
+      font-family: "artifex-cf", Georgia, 'Times New Roman', Times, serif;
     }
     & :where(code):not(pre code) {
       color: var(--color-indigo-500);
