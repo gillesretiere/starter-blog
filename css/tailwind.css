@@ -117,8 +117,6 @@
 
     & img + em {
       color: var(--color-gray-500);
-      margin-top: -44px;
-
     }
   }
 
@@ -163,6 +161,11 @@
 
 #mots-clés + p {
   color: var(--color-red-700);
+}
+
+img[alt=writing-process] {
+  width:400px;
+  height: auto;
 }
 
 .no-scrollbar::-webkit-scrollbar {
