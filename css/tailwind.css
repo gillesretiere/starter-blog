@@ -168,6 +168,11 @@ img[alt=writing-process] {
   height: auto;
 }
 
+img[alt=personnage-roman] {
+  width: max-content;
+  height: auto;
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
