@@ -109,14 +109,25 @@
 
     & p {
       font-family: "artifex-cf", Georgia, 'Times New Roman', Times, serif;
+      font-size: large;
     }
 
     & :where(code):not(pre code) {
       color: var(--color-indigo-500);
     }
 
-    & img + em {
+    & img {
+      margin-bottom: 0;
+    }
+
+    & img+em {
       color: var(--color-gray-500);
+      font-size: smaller;
+    }
+
+    & :where(ul, ol, li, h4) {
+      font-family: "artifex-cf", Georgia, 'Times New Roman', Times, serif;
+      font-size: large;
     }
   }
 
@@ -159,12 +170,12 @@
   @apply my-5;
 }
 
-#mots-clés + p {
+#mots-clés+p {
   color: var(--color-red-700);
 }
 
 img[alt=writing-process] {
-  width:400px;
+  width: 400px;
   height: auto;
 }
 
