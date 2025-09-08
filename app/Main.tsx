@@ -11,10 +11,10 @@ export default function Home({ posts }) {
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <h1 className="text-3xl leading-9 font-thin tracking-tight text-gray-900 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 dark:text-gray-100">
+          <h1 className="text-3xl text-gray-900 dark:text-gray-100 leading-9 font-thin tracking-tight sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 ">
             Expression Num&eacute;rique
           </h1>
-          <p className="text-md font-thin leading-7 text-primary-500 dark:text-gray-400">
+          <p className="text-md text-primary-500 leading-7 font-thin dark:text-gray-400">
             {siteMetadata.description}
           </p>
         </div>
@@ -28,7 +28,7 @@ export default function Home({ posts }) {
                   <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                     <dl>
                       <dt className="sr-only">Published on</dt>
-                      <dd className="text-base leading-6 font-medium text-gray-500 dark:text-gray-400">
+                      <dd className="text-base text-gray-500 dark:text-gray-400 leading-6 font-medium ">
                         <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
                       </dd>
                     </dl>
