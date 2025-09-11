@@ -229,3 +229,7 @@ input:-webkit-autofill:focus {
   display: inline-block;
   vertical-align: middle;
 }
+
+mark {
+  background-color:mistyrose;
+}
