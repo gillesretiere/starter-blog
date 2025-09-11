@@ -13,9 +13,9 @@ export default function Home({ posts }) {
         {/* prettier-ignore */}
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <img
-            src="/static/images/freepik__expand__15158_pano.png"
+            src="/static/images/banner_blog_2640x744-v1.png"
           />
-          <p className="text-md text-primary-500 leading-7 font-thin dark:text-gray-400">
+          <p className="text-md text-secondary-500 leading-7 font-medium dark:text-gray-400">
             {siteMetadata.description}
           </p>
         </div>

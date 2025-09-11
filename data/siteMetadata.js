@@ -3,7 +3,7 @@ const siteMetadata = {
   title: 'Le blog-note de Hammer & Marteau',
   author: 'Gilles Retière',
   headerTitle: 'Hammer & Marteau',
-  description: 'Le blog-note',
+  description: "Publication d'articles sur différents sujets en lien avec le numérique.",
   language: 'fr',
   theme: 'system', // system, dark or light
   siteUrl: 'https://hammer-marteau.com',
