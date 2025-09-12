@@ -181,6 +181,12 @@ img[alt=illustration] {
   border-color:lightgray;
 }
 
+img[alt=illustration-small] {
+  border: 0.2rem solid;
+  border-color:lightgray;
+}
+
+
 img[alt=writing-process] {
   width: 400px;
   height: auto;
