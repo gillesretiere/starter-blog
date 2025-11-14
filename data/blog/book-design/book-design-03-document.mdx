@@ -1,0 +1,146 @@
+---  
+title: Atelier d'édition 3/5 — Créer un document dans InDesign  
+date: '2025-11-14'  
+tags: [ 'édition', 'book design' ]  
+draft: false  
+summary: Une série d'articles sur la mise en page et l'impression.  
+---  
+![illustration](/static/images/writing-process/OF8H7H0.jpg "Image by unknown on Freepik") *Image by unknown on Freepik*
+
+## Résumé
+
+Dans cette série d'articles consacrés à l'édition numérique, nous verrons comment passer de la rédaction à la mise en page, pour obtenir un document prêt à être pris en charge par un imprimeur. Nous verrons aussi comment mettre en page pour une édition numérique sans impression, car ce peut être une solution envisageable, seule ou en complément de l'impression papier.  
+Ces articles seront divisés en deux parties : une chargée d'expliquer les principes, et une pratique, où nous appliquerons les idées développées dans la première partie. L'outil proposé pour la partie pratique est Adobe InDesign. C'est un outil professionnel qui a fait ses preuves et qui est certainement le standard du métier, aussi bien pour les graphistes que pour les imprimeurs.
+
+**Dans ce troisième article, j’expliquerai comment créer un document dans InDesign.**
+
+<hr/>
+
+## Créer un document dans Adobe InDesign
+
+### Format de page 
+
+![illustration](/static/images/writing-process/id-document-format.png "Image by unknown") *Image by unknown*
+
+![illustration](/static/images/writing-process/id-document-format-2.png "Image by unknown") *Image by unknown*
+
+![illustration](/static/images/writing-process/id-document-format-3.png "Image by unknown") *Image by unknown*
+
+![illustration](/static/images/writing-process/id-document-format-4.png "Image by unknown") *Image by unknown*
+
+![illustration](/static/images/writing-process/id-document-format-5.png "Image by unknown") *Image by unknown*
+
+![illustration](/static/images/writing-process/id-document-format-6.png "Image by unknown") *Image by unknown*
+
+![illustration](/static/images/writing-process/id-document-format-7.png "Image by unknown") *Image by unknown*
+
+
+C'est une excellente question, car les réglages de césure dans InDesign sont cruciaux pour obtenir un **gris typographique** harmonieux et une lecture fluide dans un roman justifié.
+
+Voici les réglages de césure recommandés pour un roman en français, généralement appliqués via les **Styles de Paragraphe** (Onglet **Césure** et **Justification**).
+
+## **✂️ Réglages de Césure pour un Roman en Français**
+
+Ces réglages visent à minimiser les césures disgracieuses (trop courtes, trop nombreuses consécutives, ou coupant des mots trop courts).
+
+| Option (Panneau Césure) | Réglage Recommandé | Rôle |
+| :---- | :---- | :---- |
+| **Mots d'au moins** | **5** ou **6** lettres | Un mot doit avoir ce minimum de lettres pour être coupé. 6 est souvent plus esthétique. |
+| **Après les premières** | **3** lettres | Laisse un minimum de 3 lettres au début du mot coupé (ex: *in-disponible*). |
+| **Avant les dernières** | **3** lettres | Laisse un minimum de 3 lettres à la fin du mot coupé (ex: *dispo-nible*). |
+| **Limite de césures** | **2** ou **3** traits de césure consécutifs | Limite le nombre de lignes successives se terminant par une césure. **2** est souvent préféré pour l'esthétique d'un roman. |
+| **Zone de césure** | **0** (ou une petite valeur) | Utile uniquement en alignement *en drapeau* (non justifié). En justifié, laissez **0 mm**. |
+
+---
+
+### **Options à (Dés)activer**
+
+| Option (Panneau Césure) | Recommandation | Justification |
+| :---- | :---- | :---- |
+| **Couper les mots en capitales** | **Désactivé** (Décoché) | Pour éviter de couper les noms propres ou les sigles écrits entièrement en majuscules (ex: *ONU*, *PARIS*). |
+| **Couper le dernier mot** | **Désactivé** (Décoché) | Pour éviter qu'un paragraphe se termine par un mot coupé. |
+| **Césure sur la colonne** | **Désactivé** (Décoché) | Pour éviter qu'un mot soit coupé entre la fin d'une colonne/cadre et le début du suivant (sauf si nécessaire et contrôlé). |
+
+---
+
+### **📝 Note Cruciale : Le Compositeur**
+
+Pour une gestion optimale du texte dans un roman justifié, assurez-vous que vous utilisez le bon moteur de composition :
+
+1. **Compositeur :** Utilisez le **Compositeur de paragraphe Adobe** (plutôt que le Compositeur de ligne simple Adobe).  
+   * Il analyse l'ensemble du paragraphe pour optimiser la césure, l'espacement et la justification, ce qui est essentiel pour un "gris typographique" régulier.
+
+### **⚙️ Le Complément : Réglages de Justification**
+
+En plus de la césure, il est fortement recommandé d'ajuster les tolérances d'espacement pour la **Justification** (dans le même Style de Paragraphe), car elles travaillent de concert avec la césure pour éliminer les "rivières" :
+
+| Option (Panneau Justification) | Minimal (%) | Optimal (%) | Maximal (%) |
+| :---- | :---- | :---- | :---- |
+| **Espacement entre les mots** | **85** (ou 80) | **100** | **115** (ou 120) |
+| **Interlettrage** | **-3** (ou -5) | **0** | **+3** (ou +5) |
+| **Échelle des glyphes** | **99** | **100** | **101** |
+
+**Le principe :** Autoriser InDesign à varier légèrement l'espacement et la taille des caractères (sans que cela soit perceptible) pour améliorer le placement des mots et éviter un trop grand nombre de césures.
+
+Ces réglages constituent un excellent point de départ pour l'édition de romans en français. 
+
+C'est une excellente suite, car gérer les veuves et les orphelines est le signe d'une mise en page professionnelle et soignée.
+
+Voici plusieurs astuces et techniques que vous pouvez utiliser dans Adobe InDesign pour éliminer ou minimiser les veuves et les orphelines dans votre roman, en tenant compte des spécificités de la langue française.
+
+---
+
+## **👻 Astuces pour Gérer les Veuves et les Orphelines**
+
+Le terme Veuve (en anglais : widow) désigne la dernière ligne d'un paragraphe qui est isolée en haut d'une colonne ou d'une page suivante.
+
+Le terme Orpheline (en anglais : orphan) désigne la première ligne d'un paragraphe qui est isolée en bas d'une colonne ou d'une page précédente.
+
+### **1. Utiliser les Options de Conservation (Le Réglage Le Plus Simple)**
+
+La méthode la plus directe et la plus recommandée est d'utiliser les **Options de conservation** des Styles de Paragraphe d'InDesign :
+
+* **Où le trouver :** Dans votre **Style de Paragraphe** pour le corps du texte > Section **Options de conservation**.  
+* **Réglage pour les Orphelines :**  
+  * Cochez **Conserver avec le paragraphe suivant**. Laissez ce paramètre sur **0 lignes** (il est surtout utile pour conserver les titres avec le début du texte).  
+  * Cochez **Lignes de début et de fin**.  
+  * Réglez **Au moins [3] lignes au début** (pour éviter une orpheline d'une ou deux lignes).  
+  * Réglez **Au moins [3] lignes à la fin** (pour éviter une veuve d'une ou deux lignes).
+
+**Note :** InDesign forcera le saut de ligne nécessaire pour maintenir au moins 3 lignes au début et 3 lignes à la fin, résolvant ainsi automatiquement la majorité des problèmes.
+
+### **2. Le Forçage Doux (Quand l'Automatique ne Suffit Pas)**
+
+Si la méthode automatique crée un espace blanc trop important ou ne résout pas le problème dans un cas précis, vous pouvez ajuster manuellement :
+
+* **Resserrer le paragraphe :** Si une veuve/orpheline est causée par un mot qui passe à la ligne suivante, vous pouvez essayer de "tirer" ce mot pour qu'il remonte sur la ligne précédente.  
+  * Utilisez l'**Interlettrage** (approche) en le diminuant légèrement (ex: $-5$ à $-15$) uniquement sur le paragraphe problématique (via le panneau Caractère), ou ajustez les réglages d'**Interlettrage** et d'**Échelle des glyphes** dans le panneau **Justification** du style de paragraphe (voir réponse précédente).  
+* **Détendre le paragraphe :** Si vous avez trop de texte sur la page et qu'une ligne supplémentaire causerait une veuve, vous pouvez détendre légèrement le paragraphe pour forcer une ligne de texte supplémentaire vers le bas.  
+  * Augmentez légèrement l'**Interlettrage** ou l'**Espacement entre les mots** pour le paragraphe en question.
+
+### **3. Les Espaces Insécables (Pour les Mots Courts)**
+
+En français, il est crucial d'éviter qu'un mot court (souvent le dernier mot d'un paragraphe) se retrouve seul sur une ligne, créant une veuve d'un mot.
+
+* **Astuce :** Utilisez un **espace insécable** (ou espace justifiant) avant le dernier mot court d'un paragraphe.  
+  * **Raccourci InDesign (Mac) :** $text{Option} + text{Majuscule} + text{Espace}$  
+  * **Raccourci InDesign (Windows) :** $text{Ctrl} + text{Majuscule} + text{Espace}$
+
+Cela garantit que les deux derniers mots du paragraphe restent toujours ensemble sur la même ligne.
+
+### **4. Les Sauts Spécifiques**
+
+Dans les cas très complexes où l'ajustement du texte ne fonctionne pas, vous pouvez utiliser un forçage manuel :
+
+* **Saut de Cadre (Page) :** Si vous avez une veuve en haut de page, vous pouvez insérer un saut de cadre pour forcer le paragraphe précédent à se terminer avant la coupure.  
+  * **Raccourci :** $text{Entrée}$ du pavé numérique (ou $text{Type} > text{Insérer un caractère spécial} > text{Marqueurs} > text{Saut de cadre}$).  
+* **Saut de Colonne :** Utilisez le Saut de Colonne si votre texte est disposé sur plusieurs colonnes.
+
+**⚠️ Avertissement :** Les sauts manuels doivent être utilisés avec **parcimonie** car ils compliquent la gestion des ajustements automatiques ultérieurs (comme l'édition du texte ou un changement de taille de police). L'utilisation des **Options de conservation** est toujours préférable.
+
+En appliquant les réglages du point 1 aux styles de paragraphe de votre roman, vous devriez résoudre 95 % des problèmes de veuves et d'orphelines de manière automatisée.
+
+Avez-vous d'autres questions sur la mise en page d'un roman, comme la gestion des marges, ou le choix de la grille de ligne de base ?
+
+## Suite de l'article :  Atelier d'édition 4/5 — Création d’un modèle dans Adobe InDesign
+
