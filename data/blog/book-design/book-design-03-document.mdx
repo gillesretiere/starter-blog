@@ -4,8 +4,7 @@ date: '2025-11-14'
 tags: [ 'édition', 'book design' ]  
 draft: false  
 summary: Une série d'articles sur la mise en page et l'impression.  
----  
-![illustration](/static/images/writing-process/OF8H7H0.jpg "Image by unknown on Freepik") *Image by unknown on Freepik*
+---
 
 ## Résumé
 
@@ -31,9 +30,6 @@ Ces articles seront divisés en deux parties : une chargée d'expliquer les prin
 ![illustration](/static/images/writing-process/id-document-format-5.png "Image by unknown") *Image by unknown*
 
 ![illustration](/static/images/writing-process/id-document-format-6.png "Image by unknown") *Image by unknown*
-
-![illustration](/static/images/writing-process/id-document-format-7.png "Image by unknown") *Image by unknown*
-
 
 C'est une excellente question, car les réglages de césure dans InDesign sont cruciaux pour obtenir un **gris typographique** harmonieux et une lecture fluide dans un roman justifié.
 
@@ -76,8 +72,8 @@ En plus de la césure, il est fortement recommandé d'ajuster les tolérances d'
 
 | Option (Panneau Justification) | Minimal (%) | Optimal (%) | Maximal (%) |
 | :---- | :---- | :---- | :---- |
-| **Espacement entre les mots** | **85** (ou 80) | **100** | **115** (ou 120) |
-| **Interlettrage** | **-3** (ou -5) | **0** | **+3** (ou +5) |
+| **Espacement entre les mots** | **85** (ou 80\) | **100** | **115** (ou 120\) |
+| **Interlettrage** | **\-3** (ou \-5) | **0** | **\+3** (ou \+5) |
 | **Échelle des glyphes** | **99** | **100** | **101** |
 
 **Le principe :** Autoriser InDesign à varier légèrement l'espacement et la taille des caractères (sans que cela soit perceptible) pour améliorer le placement des mots et éviter un trop grand nombre de césures.
@@ -96,20 +92,20 @@ Le terme Veuve (en anglais : widow) désigne la dernière ligne d'un paragraphe 
 
 Le terme Orpheline (en anglais : orphan) désigne la première ligne d'un paragraphe qui est isolée en bas d'une colonne ou d'une page précédente.
 
-### **1. Utiliser les Options de Conservation (Le Réglage Le Plus Simple)**
+### **1\. Utiliser les Options de Conservation (Le Réglage Le Plus Simple)**
 
 La méthode la plus directe et la plus recommandée est d'utiliser les **Options de conservation** des Styles de Paragraphe d'InDesign :
 
-* **Où le trouver :** Dans votre **Style de Paragraphe** pour le corps du texte > Section **Options de conservation**.  
+* **Où le trouver :** Dans votre **Style de Paragraphe** pour le corps du texte \> Section **Options de conservation**.  
 * **Réglage pour les Orphelines :**  
   * Cochez **Conserver avec le paragraphe suivant**. Laissez ce paramètre sur **0 lignes** (il est surtout utile pour conserver les titres avec le début du texte).  
   * Cochez **Lignes de début et de fin**.  
-  * Réglez **Au moins [3] lignes au début** (pour éviter une orpheline d'une ou deux lignes).  
-  * Réglez **Au moins [3] lignes à la fin** (pour éviter une veuve d'une ou deux lignes).
+  * Réglez **Au moins \[3\] lignes au début** (pour éviter une orpheline d'une ou deux lignes).  
+  * Réglez **Au moins \[3\] lignes à la fin** (pour éviter une veuve d'une ou deux lignes).
 
 **Note :** InDesign forcera le saut de ligne nécessaire pour maintenir au moins 3 lignes au début et 3 lignes à la fin, résolvant ainsi automatiquement la majorité des problèmes.
 
-### **2. Le Forçage Doux (Quand l'Automatique ne Suffit Pas)**
+### **2\. Le Forçage Doux (Quand l'Automatique ne Suffit Pas)**
 
 Si la méthode automatique crée un espace blanc trop important ou ne résout pas le problème dans un cas précis, vous pouvez ajuster manuellement :
 
@@ -118,29 +114,183 @@ Si la méthode automatique crée un espace blanc trop important ou ne résout pa
 * **Détendre le paragraphe :** Si vous avez trop de texte sur la page et qu'une ligne supplémentaire causerait une veuve, vous pouvez détendre légèrement le paragraphe pour forcer une ligne de texte supplémentaire vers le bas.  
   * Augmentez légèrement l'**Interlettrage** ou l'**Espacement entre les mots** pour le paragraphe en question.
 
-### **3. Les Espaces Insécables (Pour les Mots Courts)**
+### **3\. Les Espaces Insécables (Pour les Mots Courts)**
 
 En français, il est crucial d'éviter qu'un mot court (souvent le dernier mot d'un paragraphe) se retrouve seul sur une ligne, créant une veuve d'un mot.
 
 * **Astuce :** Utilisez un **espace insécable** (ou espace justifiant) avant le dernier mot court d'un paragraphe.  
-  * **Raccourci InDesign (Mac) :** $text{Option} + text{Majuscule} + text{Espace}$  
-  * **Raccourci InDesign (Windows) :** $text{Ctrl} + text{Majuscule} + text{Espace}$
+  * **Raccourci InDesign (Mac) :** $\text{Option} + \text{Majuscule} + \text{Espace}$  
+  * **Raccourci InDesign (Windows) :** $\text{Ctrl} + \text{Majuscule} + \text{Espace}$
 
 Cela garantit que les deux derniers mots du paragraphe restent toujours ensemble sur la même ligne.
 
-### **4. Les Sauts Spécifiques**
+### **4\. Les Sauts Spécifiques**
 
 Dans les cas très complexes où l'ajustement du texte ne fonctionne pas, vous pouvez utiliser un forçage manuel :
 
 * **Saut de Cadre (Page) :** Si vous avez une veuve en haut de page, vous pouvez insérer un saut de cadre pour forcer le paragraphe précédent à se terminer avant la coupure.  
-  * **Raccourci :** $text{Entrée}$ du pavé numérique (ou $text{Type} > text{Insérer un caractère spécial} > text{Marqueurs} > text{Saut de cadre}$).  
+  * **Raccourci :** $\text{Entrée}$ du pavé numérique (ou $\text{Type} \> \text{Insérer un caractère spécial} \> \text{Marqueurs} \> \text{Saut de cadre}$).  
 * **Saut de Colonne :** Utilisez le Saut de Colonne si votre texte est disposé sur plusieurs colonnes.
 
 **⚠️ Avertissement :** Les sauts manuels doivent être utilisés avec **parcimonie** car ils compliquent la gestion des ajustements automatiques ultérieurs (comme l'édition du texte ou un changement de taille de police). L'utilisation des **Options de conservation** est toujours préférable.
 
 En appliquant les réglages du point 1 aux styles de paragraphe de votre roman, vous devriez résoudre 95 % des problèmes de veuves et d'orphelines de manière automatisée.
 
-Avez-vous d'autres questions sur la mise en page d'un roman, comme la gestion des marges, ou le choix de la grille de ligne de base ?
+C'est une excellente initiative de définir la structure dès le départ. Pour un roman de 400 pages, ces choix sont fondamentaux car ils impactent directement le coût d'impression, le confort de lecture, et l'esthétique du livre.
 
-## Suite de l'article :  Atelier d'édition 4/5 — Création d’un modèle dans Adobe InDesign
+Voici les recommandations détaillées pour la création de votre document InDesign, basées sur les normes éditoriales françaises et internationales.
+
+## **📐 Paramètres de Document InDesign pour un Roman**
+
+### **1\. Format (Taille des Pages)**
+
+Le choix du format dépend du genre de votre roman (littérature générale, poche, etc.) et de l'équilibre souhaité entre maniabilité et confort de lecture.
+
+| Format | Dimensions (Largeur x Hauteur) | Usage Principal | Recommandation |
+| :---- | :---- | :---- | :---- |
+| **Poche standard** | Environ $11 \text{ cm} \times 18 \text{ cm}$ | Littérature de masse, lecture nomade. | *À éviter pour la première édition* car le texte est trop condensé. |
+| **Moyen (ou Trade Paperback)** | Environ $13,5 \text{ cm} \times 21,5 \text{ cm}$ | **Littérature générale, format standard.** | **Fortement recommandé** pour l'édition courante. Offre un bon confort. |
+| **Grand Format** | Environ $15 \text{ cm} \times 23 \text{ cm}$ | Romans spéciaux, biographies, livres de jeunesse. | Si vous voulez un livre plus imposant et avec des marges plus généreuses. |
+
+**Recommandation pour 400 pages :** Optez pour le format **$13,5 \text{ cm} \times 21,5 \text{ cm}$**. Il est économique, populaire et offre une belle surface pour une bonne composition typographique.
+
+### **2\. Marges**
+
+Les marges doivent être asymétriques pour l'impression (reliure) et optimisées pour le confort de l'œil. Elles se définissent dans la boîte de dialogue **Marges et colonnes** :
+
+| Marge | Recommandation | Justification |
+| :---- | :---- | :---- |
+| **Intérieure (Côté Reliure)** | **$18 \text{ mm}$ à $22 \text{ mm}$** | Doit être la plus large ou égale à l'extérieure. Pour un livre épais (400 pages), elle est cruciale pour que le texte ne disparaisse pas dans le pli central. |
+| **Extérieure** | **$16 \text{ mm}$ à $20 \text{ mm}$** | Laisse l'espace nécessaire au pouce du lecteur pour tenir le livre sans cacher le texte. |
+| **Supérieure (Tête)** | **$15 \text{ mm}$ à $18 \text{ mm}$** | Souvent un peu plus petite que la marge de pied. Accueille parfois le titre courant (si utilisé). |
+| **Inférieure (Pied)** | **$20 \text{ mm}$ à $25 \text{ mm}$** | Généralement la plus grande. Accueille le folio (numéro de page). |
+
+**Conseil :** L'ajout de 1 à $2 \text{ mm}$ à toutes les marges pour un livre de 400 pages (à cause de l'épaisseur du bloc) est une bonne pratique.
+
+### **3\. Fonds Perdus (*Bleed*) et Lignes-bloc (*Slug*)**
+
+Ces zones sont techniques et nécessaires pour l'impression.
+
+* **Fonds Perdus (*Bleed*)**  
+  * **Réglage :** **$3 \text{ mm}$** tout autour (Intérieur, Extérieur, Haut, Bas).  
+  * **Rôle :** Espace au-delà de la taille finale de votre page. Si votre livre a des éléments graphiques allant jusqu'au bord (ce qui est rare pour un roman, mais possible pour les chapitres), ces $3 \text{ mm}$ garantissent qu'après la coupe (rognage), il n'y aura pas de filet blanc.  
+  * *Si votre roman est composé uniquement de texte noir sur fond blanc, ce réglage n'est pas strictement nécessaire, mais c'est une norme d'impression.*  
+* **Lignes-bloc (*Slug*)**  
+  * **Réglage :** **$0 \text{ mm}$** (Sauf si demandé par l'imprimeur).  
+  * **Rôle :** Espace extérieur aux fonds perdus, utilisé pour les instructions de l'imprimeur, les marques de contrôle ou les numéros de version. Il est rarement utilisé pour un roman simple.
+
+### **4\. La Grille de Ligne de Base**
+
+L'utilisation d'une grille de ligne de base est **essentielle** pour un roman. Elle garantit que les lignes de texte s'alignent parfaitement d'une page à l'autre et à travers les colonnes (dans le cas de textes courts), améliorant grandement le confort de lecture.
+
+| Paramètre | Réglage | Justification |
+| :---- | :---- | :---- |
+| **Définition** | **Préférences** \> **Grilles** |  |
+| **Début** | **$0 \text{ mm}$** (à partir du haut de la marge supérieure) | Fait partir la grille de la marge supérieure définie, et non du bord de la page. |
+| **Increment (Saut)** | **Égal à l'Interlignage de Votre Corps de Texte** | Si votre corps de texte est en $11 \text{ pt}$ et votre Interlignage est $13,5 \text{ pt}$, le saut de la grille doit être de **$13,5 \text{ pt}$**. |
+
+**Application aux Styles de Paragraphe :**
+
+* Dans votre Style de Paragraphe pour le corps du texte (Section **Retrait et espacement**), cochez l'option **Aligner sur la grille de ligne de base**.
+
+---
+
+### **Résumé des Paramètres Clés pour InDesign**
+
+| Paramètre | Valeur Recommandée |
+| :---- | :---- |
+| **Format (Taille)** | $135 \text{ mm} \times 215 \text{ mm}$ |
+| **Marges Intérieure/Extérieure** | $20 \text{ mm} / 18 \text{ mm}$ |
+| **Marges Supérieure/Inférieure** | $17 \text{ mm} / 22 \text{ mm}$ |
+| **Fonds Perdus (*Bleed*)** | $3 \text{ mm}$ (Partout) |
+| **Interlignage (Exemple)** | $13,5 \text{ pt}$ (pour un corps $11 \text{ pt}$) |
+| **Grille de Ligne de Base (Saut)** | $13,5 \text{ pt}$ (Doit correspondre à l'interlignage) |
+
+Ces réglages vous permettront d'établir une base solide et professionnelle pour la mise en page de votre roman de 400 pages.
+
+## Paramètrage pour un format A5
+
+Excellent. Utiliser le format A5 ($148 \text{ mm} \times 210 \text{ mm}$) comme base est un choix pragmatique. Il est plus large que les formats éditoriaux étroits, ce qui rend la gestion des marges et du texte cruciale pour le confort de lecture.
+
+Voici la réévaluation de tous les paramètres pour votre roman de 400 pages, en optimisant la composition pour le format A5.
+
+---
+
+## **📐 I. Paramètres du Document (Format $148 \times 210 \text{ mm}$)**
+
+### **1\. Marges (Clé pour le Confort)**
+
+L'objectif est d'assurer que la **longueur de la ligne de texte** (la justification) reste lisible malgré la largeur de $148 \text{ mm}$ du A5.
+
+| Marge (Terme Classique) | Terme InDesign | Valeur Recommandée (400 pages) | Justification pour le A5 |
+| :---- | :---- | :---- | :---- |
+| **Petit Fond** | Intérieure | **$22 \text{ mm}$** | Augmentée pour $400$ pages afin que le texte ne soit pas mangé par la reliure. |
+| **Grand Fond** | Extérieure | **$25 \text{ mm}$** | Augmentée. Cette largeur aide à réduire la longueur de la ligne de texte, améliorant ainsi la lisibilité. |
+| **Tête** | Supérieure | **$18 \text{ mm}$** | Espace minimal nécessaire pour le titre courant (ou sans titre courant). |
+| **Pied** | Inférieure | **$25 \text{ mm}$** | Marge la plus grande pour l'esthétique et le folio. |
+
+**Résultat :**
+
+* Le bloc de texte aura une largeur de $148 \text{ mm} - 22 \text{ mm} - 25 \text{ mm} = \mathbf{101 \text{ mm}}$.  
+* Cette largeur de $101 \text{ mm}$ permet un nombre de caractères par ligne d'environ $60-70$ (pour une police $11 \text{ pt} / 13,5 \text{ pt}$), ce qui est dans la fourchette optimale de lisibilité ($55-75$ caractères/ligne).
+
+### **2\. Fonds Perdus (*Bleed*) et Lignes-bloc (*Slug*)**
+
+* **Fonds Perdus (*Bleed*) :** **$3 \text{ mm}$** tout autour (Haut, Bas, Intérieur, Extérieur). C'est la norme pour l'imprimeur, même si votre roman est juste du texte noir sur fond blanc.  
+* **Lignes-bloc (*Slug*) :** **$0 \text{ mm}$** (Sauf si l'imprimeur demande des informations spécifiques dans cette zone).
+
+---
+
+## **📚 II. Grille de Ligne de Base et Typographie**
+
+### **1\. Grille de Ligne de Base (Pour l'Alignement)**
+
+La grille de ligne de base assure que la composition est stable et que les lignes de texte s'alignent parfaitement sur les pages en regard.
+
+* **Taille du Corps de Texte :** $11 \text{ pt}$ (Standard pour un roman).  
+* **Interlignage :** $10000,5 \text{ pt}$ (environ $123\%$ de $11 \text{ pt}$, très confortable).  
+* **Réglage de la Grille de Ligne de Base :** **$13,5 \text{ pt}$** (doit correspondre à l'interlignage).  
+  * **Début :** $0 \text{ mm}$ (à partir de la marge supérieure).  
+* **Application :** Appliquez l'option **Aligner sur la grille de ligne de base** à votre Style de Paragraphe "Corps de Texte".
+
+### **2\. Options de Césure (Pour l'Harmonie)**
+
+Les réglages pour le français restent les mêmes que ceux recommandés précédemment, car ils sont basés sur les règles typographiques de la langue.
+
+| Option (Panneau Césure) | Réglage | Rôle |
+| :---- | :---- | :---- |
+| **Mots d'au moins** | **6** lettres | Empêche la coupure des mots trop courts. |
+| **Après les premières** | **3** lettres | Laisse une syllabe de début de mot assez longue. |
+| **Avant les dernières** | **3** lettres | Laisse une syllabe de fin de mot assez longue. |
+| **Limite de césures** | **2** traits consécutifs | Pour une composition propre (gris typographique). |
+| **Couper les mots en capitales** | **Désactivé** (Décoché) | Évite de couper les noms propres. |
+| **Couper le dernier mot** | **Désactivé** (Décoché) | Évite une veuve d'un mot coupé en fin de paragraphe. |
+
+### **3\. Options de Justification (Pour les Espaces)**
+
+Étant donné que votre ligne de texte est relativement longue ($101 \text{ mm}$), vous avez plus de flexibilité pour la justification, mais il faut quand même la contrôler pour éviter les "rivières" de blanc.
+
+| Option (Panneau Justification) | Minimal (%) | Optimal (%) | Maximal (%) |
+| :---- | :---- | :---- | :---- |
+| **Espacement entre les mots** | **85** | **100** | **115** |
+| **Interlettrage** | **\-5** | **0** | **5** |
+| **Échelle des glyphes** | **99** | **100** | **101** |
+
+**Compositeur :** Assurez-vous d'utiliser le **Compositeur de paragraphe Adobe** pour appliquer ces réglages de manière optimale sur tout le paragraphe.
+
+---
+
+## **👻 III. Options de Conservation (Veuves et Orphelines)**
+
+Comme vu précédemment, ces réglages sont essentiels pour le rendu final.
+
+| Option (Panneau Options de conservation) | Réglage | Rôle |
+| :---- | :---- | :---- |
+| **Lignes de début et de fin** | Coché | Active la vérification des veuves/orphelines. |
+| **Au moins (début)** | **3** lignes | Assure qu'un paragraphe ne laisse pas moins de 3 lignes au bas d'une colonne. |
+| **Au moins (fin)** | **3** lignes | Assure qu'un paragraphe ne laisse pas moins de 3 lignes au haut d'une nouvelle colonne ou page. |
+
+En utilisant ces paramètres pour le format A5, vous obtiendrez un équilibre entre le formatage standardisé et une composition typographique soignée, garantie d'un confort de lecture optimal.
+
+## Suite de l'article :  Atelier d'édition 4/5 — Placement du texte dans un document InDesign
 
