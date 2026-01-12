@@ -6,11 +6,11 @@
 
 @import url('https://use.typekit.net/tjn2ftb.css');
 
+
 /* Core theme configuration */
 @theme {
   /* Font families */
-
-  --font-sans: neue-haas-grotesk-display, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans: neue-frutiger-world, sans-serif;
   --font-display: courrier, sans-serif;
   --font-serif: neue-haas-grotesk-display, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -85,6 +85,7 @@
     outline-color: var(--color-primary-500);
   }
 }
+  
 
 @layer utilities {
   .prose {
@@ -101,7 +102,9 @@
     }
 
     & :where(h1, h2) {
-      font-weight: 500;
+      font-family: ui-monospace, ui-sans-serif, system-ui, sans-serif;
+      font-weight: 900;
+      color: var(--color-blue-400);
       letter-spacing: var(--tracking-normal);
     }
 
@@ -136,6 +139,7 @@
       font-size: medium;
     }
   }
+
 
   .prose-invert {
     & a {
@@ -245,3 +249,4 @@ input:-webkit-autofill:focus {
 mark {
   background-color:mistyrose;
 }
+
