@@ -26,7 +26,7 @@ export default function Home({ posts }) {
             return (
               <li key={slug} className="py-12">
                 <article>
-                  <div className="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0 text-xs">
+                  <div className="space-y-2 text-xs xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0">
                     <dl>
                       <dt className="sr-only">Published on</dt>
                       <dd>
@@ -50,14 +50,14 @@ export default function Home({ posts }) {
                             ))}
                           </div>
                         </div>
-                        <div className="prose max-w-none text-base text-gray-800 dark:text-primary-100">
+                        <div className="prose dark:text-primary-100 max-w-none text-base text-gray-800">
                           {summary}
                         </div>
                       </div>
                       <div className="text-base leading-8 font-medium">
                         <Link
                           href={`/blog/${slug}`}
-                          className="text-xs text-primary-700 hover:text-primary-600 dark:hover:text-primary-400"
+                          className="text-primary-700 hover:text-primary-600 dark:hover:text-primary-400 text-xs"
                           aria-label={`Read more: "${title}"`}
                         >
                           Lire l'article &rarr;
