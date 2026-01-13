@@ -54,7 +54,7 @@ export default function Home({ posts }) {
                           {summary}
                         </div>
                       </div>
-                      <div className="text-base leading-6 font-medium">
+                      <div className="text-base leading-8 font-medium">
                         <Link
                           href={`/blog/${slug}`}
                           className="text-xs text-primary-700 hover:text-primary-600 dark:hover:text-primary-400"
